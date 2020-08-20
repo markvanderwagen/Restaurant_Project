@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lekton:wght@700&display=swap");
+.header-container {
+  background-color: #ffb451;
+  padding: 10px 10px;
+  border-radius: 100px;
+  height: 50px;
+}
+
+button {
+  font-family: "Freckle Face", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ce0a0a;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10%;
+  -webkit-box-shadow: 1px 3px 20px #888888;
+          box-shadow: 1px 3px 20px #888888;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  width: 250px;
+  height: 115px;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+header button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: #ce0a0a;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #ce0a0a;
+}
+
+header button, textarea, select {
+  outline: none;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  margin-top: 2px;
+  padding: 0px 20px;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul li a {
+  display: block;
+  width: 100px;
+  font-size: 20px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  font-family: "Freckle Face", sans-serif;
+  text-decoration: none;
+  color: #ce0a0a;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  width: 250px;
+}
+
+nav ul li ul li {
+  display: block;
+  border-radius: 10%;
+}
+
+nav ul li ul li:hover {
+  display: block;
+}
+
+nav ul li ul li a {
+  background: #585858;
+  display: block;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+#categories li a {
+  color: white;
+}
+
+#categories li a:hover {
+  color: red;
+  background-color: white;
+}
+
+body {
+  background-color: #fff3e4;
+}
+
+.body-container {
+  display: block;
+  height: auto;
+  background-color: #ffe7c8;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 100px;
+  padding-bottom: 40px;
+  -webkit-box-shadow: 1px 10px 60px #888888;
+          box-shadow: 1px 10px 60px #888888;
+}
+
+.main-headers {
+  font-family: "Freckle Face", sans-serif;
+  font-size: 60px;
+  display: block;
+  text-align: center;
+  color: white;
+  background-color: #ce0a0a;
+}
+
+.sub-headers {
+  display: block;
+  background-color: #ffb451;
+  font-family: "Freckle Face", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  margin-top: -35px;
+}
+
+.paragraphs {
+  font-family: "Lekton", sans-serif;
+  font-size: 20px;
+  color: #757575;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 25px;
+  line-height: 20px;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.image:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+nav ul {
+  margin-left: -20px;
+  margin-top: 15px;
+  padding: 0;
+  border-radius: 10px;
+  list-style: none;
+}
+
+#fadeInAndOut {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#stop {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#saveToLater {
+  float: right;
+  margin-right: 10px;
+}
+
+.addToSaved {
+  display: block;
+  font-family: "Freckle Face", sans-serif;
+  background-color: #ca9c60;
+  float: right;
+  height: 30px;
+  padding-right: 10px;
+  margin-top: -100px;
+  padding-top: 10px;
+  -webkit-box-shadow: 1px 10px 60px #888888;
+          box-shadow: 1px 10px 60px #888888;
+}
+
+#HCB_comment_box {
+  font-family: "Lekton", sans-serif;
+  color: #757575;
+}
+
+#hideOrShow {
+  font-family: "Freckle Face", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#hideOrShow:hover {
+  cursor: pointer;
+  color: #ce0a0a;
+}
+
+#contactMe {
+  text-align: center;
+}
+
+#name {
+  width: 47%;
+  font-size: 20px;
+  -webkit-box-shadow: 1px 1px 10px #888888;
+          box-shadow: 1px 1px 10px #888888;
+  font-family: "Lekton", sans-serif;
+  border: none;
+}
+
+#name:focus {
+  outline: none;
+  -webkit-box-shadow: 1px 1px 10px #fc1f1f;
+          box-shadow: 1px 1px 10px #fc1f1f;
+}
+
+#emailAdress {
+  width: 47%;
+  font-size: 20px;
+  -webkit-box-shadow: 1px 1px 10px #888888;
+          box-shadow: 1px 1px 10px #888888;
+  font-family: "Lekton", sans-serif;
+  border: none;
+}
+
+#emailAdress:focus {
+  outline: none;
+  -webkit-box-shadow: 1px 1px 10px #fc1f1f;
+          box-shadow: 1px 1px 10px #fc1f1f;
+}
+
+#message {
+  width: 95.8%;
+  margin-top: 30px;
+  font-size: 20px;
+  -webkit-box-shadow: 1px 1px 10px #888888;
+          box-shadow: 1px 1px 10px #888888;
+  font-family: "Lekton", sans-serif;
+  border: none;
+}
+
+#message:focus {
+  outline: none;
+  -webkit-box-shadow: 1px 1px 10px #fc1f1f;
+          box-shadow: 1px 1px 10px #fc1f1f;
+}
+
+#submitBtn {
+  margin-top: 30px;
+  height: 50px;
+  width: 100px;
+  border: none;
+  -webkit-box-shadow: 1px 1px 10px #888888;
+          box-shadow: 1px 1px 10px #888888;
+  font-family: "Freckle Face", sans-serif;
+  font-size: 20px;
+}
+
+#submitBtn:hover {
+  -webkit-box-shadow: 1px 1px 10px #fc1f1f;
+          box-shadow: 1px 1px 10px #fc1f1f;
+}
+
+#submitBtn:focus {
+  -webkit-box-shadow: 1px 1px 10px #fc1f1f;
+          box-shadow: 1px 1px 10px #fc1f1f;
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

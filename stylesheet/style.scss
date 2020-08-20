@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lekton:wght@700&display=swap');
+
+
+$main-font:"Freckle Face", sans-serif;
+$secondary-font:"Lekton", sans-serif;
+
+// nav bar list and drop down categories
+.header-container {
+    background-color: rgb(255, 180, 81);
+    padding: 10px 10px;
+    border-radius: 100px;
+    height: 50px;
+}
+
+button {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(206, 10, 10);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: 1px 3px 20px #888888;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    width: 250px;
+    height: 115px;
+    margin-left: 10px;
+    margin-top: 3px;
+
+}
+
+header button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color:  rgb(206, 10, 10);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;    
+}
+
+header button:hover {
+    background-color: rgba($color: #ffffff, $alpha: 0.8);
+    color: rgb(206, 10, 10);
+}
+
+header button, textarea, select {
+    outline: none;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-top: 2px;
+    padding: 0px 20px; 
+}
+
+nav ul li a:hover {
+    color:rgb(255, 255, 255);
+}
+
+nav ul li a {
+    display: block;
+    width: 100px;
+    font-size: 20px;
+    transition: 0.3s linear;
+    font-family: $main-font;
+    text-decoration: none;
+    color: rgb(206, 10, 10);
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    width: 250px;
+}
+
+nav ul li ul li {
+    display: block;
+    border-radius: 10%;
+}
+
+nav ul li ul li:hover {
+    display: block;
+}
+
+nav ul li ul li a {
+    background: #585858;
+    display: block;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+#categories li a {
+    color: white;
+}
+
+#categories li a:hover {
+    color: red;
+    background-color: rgb(255, 255, 255);
+}
+// end of nav bar list and drop down categories
+
+
+
+// body container and background
+body {
+    background-color: rgb(255, 243, 228);
+}
+
+.body-container {
+    display: block;
+    height: auto;
+    background-color: rgb(255, 231, 200);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 100px;
+    padding-bottom: 40px;
+    box-shadow: 1px 10px 60px #888888;
+}
+
+
+//header formatting
+.main-headers {
+    font-family: $main-font;
+    font-size: 60px;
+    display: block;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(206, 10, 10);
+} 
+
+
+
+// subheadings
+.sub-headers {
+    display: block;
+    background-color: rgb(255, 180, 81);
+    font-family: $main-font;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    margin-top: -35px;
+}
+
+
+
+//paragraph styling
+.paragraphs {
+    font-family: $secondary-font;
+    font-size: 20px;
+    color: #757575;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 25px;
+    line-height: 20px;
+}
+
+
+
+// image styling
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transition: .2s;
+}
+
+.image:hover {
+    transform: scale(1.5);
+}
+
+
+
+// drop down list formatting
+nav ul {
+    margin-left: -20px;
+    margin-top: 15px;
+    padding: 0;
+    border-radius: 10px;
+    list-style: none;
+    
+}
+
+// fade in and out button positioning
+#fadeInAndOut {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stop {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// like block
+#saveToLater {
+    float: right;
+    margin-right: 10px;
+}
+
+// like block formatting
+.addToSaved {
+    display: block;
+    font-family: $main-font;
+    background-color: rgb(202, 156, 96);
+    float: right;
+    height: 30px;
+    padding-right: 10px;
+    margin-top: -100px;
+    padding-top: 10px;
+    box-shadow: 1px 10px 60px #888888;
+}
+
+// forums page
+#HCB_comment_box {
+    font-family: $secondary-font;
+    color: #757575;
+}
+
+// hide and show for main page
+#hideOrShow {
+    font-family: $main-font;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#hideOrShow:hover {
+    cursor: pointer;
+    color: rgb(206, 10, 10);
+}
+
+// contact me page 
+#contactMe {
+    text-align: center;
+}
+
+#name {
+    width: 47%;
+    font-size: 20px;
+    box-shadow: 1px 1px 10px #888888;
+    font-family: $secondary-font;
+    border: none;
+}
+
+#name:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px #fc1f1f;
+}
+
+#emailAdress {
+    width: 47%;
+    font-size: 20px;
+    box-shadow: 1px 1px 10px #888888;
+    font-family: $secondary-font;
+    border: none;
+}
+
+#emailAdress:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px #fc1f1f;
+}
+
+#message {
+    width: 95.8%;
+    margin-top: 30px;
+    font-size: 20px;
+    box-shadow: 1px 1px 10px #888888;
+    font-family: $secondary-font;
+    border: none;
+}
+
+#message:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px #fc1f1f;
+}
+
+#submitBtn {
+    margin-top: 30px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    box-shadow: 1px 1px 10px #888888;
+    font-family: $main-font;
+    font-size: 20px;
+}
+
+#submitBtn:hover {
+    box-shadow: 1px 1px 10px #fc1f1f;
+}
+
+#submitBtn:focus {
+    box-shadow: 1px 1px 10px #fc1f1f;
+    outline: none;
+}
+
+
+
+  
+  

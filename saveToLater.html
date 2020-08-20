@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- meta data and linking -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- linking of css -->
+        <link rel="stylesheet" href="/stylesheet/style.css" type="text/css">
+
+        <!-- linking of jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- document title -->
+        <title>ReadList</title>
+
+    </head>
+
+    <!-- body  -->
+    <body>
+        <!-- nav-bar -->
+        <header id="header" class="header-container">
+            <a class="logo" href="restaurant.html"><img class="logo" src="/images/logo.png" alt="logo"></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/contactMe.html">Contact me</a></li>
+                    <li><a href="#">Our Food</a>
+                        <ul id="categories">
+                            <li><a href="#">Recipes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Other</a>
+                        <ul id="categories">
+                            <li><a href="saveToLater.html">Readlist</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </li>
+                    <a href="/forums.html"><button>Forums</button></a>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- heading for readList -->
+        <h1 class="main-headers">Readlist items </h1>
+
+        <!-- this is the container for the saved items to go -->
+        <div class="body-container" id="savedContainer">
+            
+        </div>
+        
+        <!-- linking of the scripts -->
+        <script src="/javaScript/main.js" type="text/javascript"></script>
+    </body>
+</html>
