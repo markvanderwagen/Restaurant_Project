@@ -107,8 +107,7 @@ function dropDownList() {
 function checkOnLoad() {
   let storageArray = JSON.parse(localStorage.getItem("saveForLater"));
 
-  if (storageArray !== null) {
-    
+  if (storageArray !== null || document.location.pathname === "/saveToLater.html") {
     storageArray.forEach(function(item, index) { // for each loop to find index of the item
       let itemKey = item.body;
       let content = document.querySelectorAll('.content');
