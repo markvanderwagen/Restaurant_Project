@@ -106,26 +106,29 @@ function dropDownList() {
 // checking which element are in the save for later page and what to check on the main page
 function checkOnLoad() {
   let storageArray = JSON.parse(localStorage.getItem("saveForLater"));
-  storageArray.forEach(function(item, index) { // for each loop to find index of the item
-    let itemKey = item.body;
-    let content = document.querySelectorAll('.content');
 
-      if (content[index] = itemKey) {
+  if (storageArray !== null) {
+    storageArray.forEach(function(item, index) { // for each loop to find index of the item
+      let itemKey = item.body;
+      let content = document.querySelectorAll('.content');
 
-        // switch case to check or uncheck the inputs
-        switch (index) {
-          case 0:
-            document.getElementById("checkbox0").checked = true;
-            break;
-          case 1:
-            document.getElementById("checkbox1").checked = true;
-            break;
-          case 2:
-            document.getElementById("checkbox2").checked = true;
-            break;
+        if (content[index] = itemKey) {
+
+          // switch case to check or uncheck the inputs
+          switch (index) {
+            case 0:
+              document.getElementById("checkbox0").checked = true;
+              break;
+            case 1:
+              document.getElementById("checkbox1").checked = true;
+              break;
+            case 2:
+              document.getElementById("checkbox2").checked = true;
+              break;
+          }
         }
-      }
-  });
+    });
+  }
 }
 
 function likeButtonAnimation() { // hover animation for the like button
