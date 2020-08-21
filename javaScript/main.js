@@ -41,7 +41,7 @@ $(document).ready(function(){
 // function to render the page elements of saveForLater
 function createSavedElements() {
 
-  if (document.location.pathname === "/saveToLater.html") {
+  if (document.location.pathname === "/restaurant_project/saveToLater.html") {
 
   let storageArray = JSON.parse(localStorage.getItem("saveForLater"));
 
@@ -63,7 +63,7 @@ function removeItem(event, array) {
   event.target.parentElement.parentElement;
   array.splice(event,1)
   
-  if (document.location.pathname === "/saveToLater.html") { // only delete item off of the saveToLater page
+  if (document.location.pathname === "/restaurant_project/saveToLater.html") { // only delete item off of the saveToLater page
 
     event.target.parentElement.parentElement.remove();
   }
@@ -105,7 +105,7 @@ function dropDownList() {
 
 // checking which element are in the save for later page and what to check on the main page
 function checkOnLoad() {
-  if (document.location.pathname === '/index.html') {
+  if (document.location.pathname === '/restaurant_project/index.html') {
     let storageArray = JSON.parse(localStorage.getItem("saveForLater"));
 
     if (storageArray !== null) {
