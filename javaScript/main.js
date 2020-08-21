@@ -49,7 +49,6 @@ function createSavedElements() {
     storageArray.forEach(function(item) { // for each item in array do this:
       let container = document.getElementById('savedContainer');
       let newElement = document.createElement('div');
-      newElement.className = 'saved';
       newElement.innerHTML = item.body;
       container.appendChild(newElement);
       $('.checkbox').prop('checked', true);
