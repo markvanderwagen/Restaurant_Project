@@ -114,7 +114,7 @@ function checkOnLoad() {
         let itemKey = item.body;
         let content = document.querySelectorAll('.content');
 
-        if (content[index] === itemKey) {
+        if (content[index].innerHTML == itemKey) {
             // switch case to check or uncheck the inputs
           switch (index) {
             case 0:
