@@ -26,6 +26,7 @@ $(document).ready(function(){
   
       if($(this).is(":checked")) {
 
+        $('.addToSaved').css('opacity', '1');
         addItem(storageArray);
         alert("This item has been added to your readList")
 
