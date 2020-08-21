@@ -106,25 +106,29 @@ function dropDownList() {
 // checking which element are in the save for later page and what to check on the main page
 function checkOnLoad() {
   if (document.location.pathname === '/restaurant_project/index.html') {
-    let storageArray = JSON.parse(localStorage.getItem("saveForLater"));
+      let storageArray = JSON.parse(localStorage.getItem("saveForLater"));
 
     if (storageArray !== null) {
-      storageArray.forEach(function(item, index) { // for each loop to find index of the item
+      storageArray.forEach(function(item) { // for each loop to find index of the item
         let itemKey = item.body;
         let content = document.querySelectorAll('.content');
+        console.log(itemKey);
 
-        if (content[index].innerHTML == itemKey) {
-            // switch case to check or uncheck the inputs
-          switch (index) {
-            case 0:
-              document.getElementById("checkbox0").checked = true;
-              break;
-            case 1:
-              document.getElementById("checkbox1").checked = true;
-              break;
-            case 2:
-              document.getElementById("checkbox2").checked = true;
-              break;
+        for (let i = 0; i < content.length; i++) {
+
+          if (content[i].innerHTML == itemKey) {
+              // switch case to check or uncheck the inputs
+            switch (i) {
+              case 0:
+                document.getElementById("checkbox0").checked = true;
+                break;
+              case 1:
+                document.getElementById("checkbox1").checked = true;
+                break;
+              case 2:
+                document.getElementById("checkbox2").checked = true;
+                break;
+            }
           }
         }
       });
