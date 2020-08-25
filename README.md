@@ -8,7 +8,7 @@ Staged website for a restaurant with features such as:
 * Forums page
 In this project i used HTML CSS and JavaScript
 
-#Contents of readme file:
+##Contents of readme file:
 
 * contents of website
 * Installtion section for VScode and without
@@ -16,14 +16,14 @@ In this project i used HTML CSS and JavaScript
 * Author
 * Terms of use
 
-#Contents of page:
+##Contents of page:
 
 * Main-page : https://markvanderwagen.github.io/restaurant_project/
 * Contact Us: https://markvanderwagen.github.io/restaurant_project/contactMe.html
 * Save Page: https://markvanderwagen.github.io/restaurant_project/saveToLater.html
 * Forums Page: https://markvanderwagen.github.io/restaurant_project/saveToLater.html
 
-#Installation section:
+##Installation section:
 
 ###With out Vs code live server: (some features may not work and you may need to change path names within the code)
 1. Download all the files
@@ -38,7 +38,7 @@ In this project i used HTML CSS and JavaScript
 5. on the bottom right click on the live server button
 6. see the magic
 
-#Usage section
+##Usage section
 
 * To use this page is like any other page, on the top is the nav bar with the items.
 ![](images/nav-bar.PNG)
@@ -48,11 +48,11 @@ In this project i used HTML CSS and JavaScript
 * You can hide or show an image by clickin on the hide button.
 ![](images/hide-button.PNG)
 
-#author
+##author
 
 Mark Vanderwagen - https://markvanderwagen.github.io/MyCV/portfolio.html
 
-#Terms of Use
+##Terms of Use
 
 You may use this file but cannot claim it as your own. You are welcome to use code out of this at your own free will, but credit where it is due.
 
