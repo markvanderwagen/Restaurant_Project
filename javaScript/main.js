@@ -4,11 +4,11 @@ let array = [];
 $(document).ready(function () {
   // calling of functions
   dropDownList();
-  createSavedElements();
+  createSavedElementsOnReadlistPage();
   checkOnLoad();
   likeButtonAnimation();
-  hideOrShow();
-  submitButtonClick();
+  hideOrShowFunctionality();
+  submitButtonClickAlert();
 
   // if no localstorage has been made make a new one
   if (localStorage.getItem("hasRunBefore") === null) {
@@ -35,7 +35,7 @@ $(document).ready(function () {
 });
 
 // function to render the page elements of saveForLater
-function createSavedElements() {
+function createSavedElementsOnReadlistPage() {
   // if the restaurant path is this then do the following
   if (document.location.pathname === "/restaurant_project/saveToLater.html") {
     let storageArray = JSON.parse(localStorage.getItem("saveForLater"));
@@ -143,7 +143,7 @@ function likeButtonAnimation() {
   });
 }
 
-function hideOrShow() {
+function hideOrShowFunctionality() {
   // function for the hide or show function
   $(".hideOrShow")
     .children("span")
@@ -158,7 +158,7 @@ function hideOrShow() {
     });
 }
 
-function submitButtonClick() {
+function submitButtonClickAlert() {
   // notification for submit button to alert when message has been sent
   $("#submitBtn").click(function () {
     alert("Your message has been sent! We will get back to you soon!");
