@@ -1,112 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
+    <!-- meta data and linking -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- meta data and linking -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking of css -->
+    <link rel="stylesheet" href="stylesheet/style.css" type="text/css" />
 
-        <!-- linking of css -->
-        <link rel="stylesheet" href="stylesheet/style.css" type="text/css">
+    <!-- linking of jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-        <!-- linking of jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- document title -->
+    <title>Restaurant</title>
+  </head>
 
-        <!-- document title -->
-        <title>Restaurant</title>
+  <!-- body  -->
+  <body>
+    <!-- nav-bar -->
+    <header id="header" class="header-container">
+      <a class="logo" href="index.html"><img class="logo" src="images/logo.png" alt="logo" /></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="contactMe.html">Contact me</a></li>
+          <li>
+            <a href="#">Our Food</a>
+            <ul id="categories">
+              <li><a href="#">Recipes</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Other</a>
+            <ul id="categories">
+              <li><a href="saveToLater.html">Readlist</a></li>
+              <li><a href="#">Settings</a></li>
+            </ul>
+          </li>
+          <a href="forums.html"><button>Forums</button></a>
+        </ul>
+      </nav>
+    </header>
 
-    </head>
+    <!-- body container and information -->
+    <div class="body-container">
+      <!-- header one -->
+      <div class="content">
+        <h1 id="mainHeader1" class="main-headers">Our Story!</h1>
+        <h3 id="subHeader1" class="sub-headers">Where it all began</h3>
+        <p id="para1" class="paragraphs">
+          In a busy town like Johannesburg many little stores can get lost, but not ours! With my Grandma's recipes and the gentle caring nature that our food has, with every mouthful a new delicous sensation that will leave you wanting more. <br />
+          <br />
+          In the heart of Sandton, started when it was the smallest square-mile in Africa, stood Jason's dinner, your local place to feed.
+        </p>
 
-    <!-- body  -->
-    <body>
-        <!-- nav-bar -->
-        <header id="header" class="header-container">
-            <a class="logo" href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="contactMe.html">Contact me</a></li>
-                    <li><a href="#">Our Food</a>
-                        <ul id="categories">
-                            <li><a href="#">Recipes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Other</a>
-                        <ul id="categories">
-                            <li><a href="saveToLater.html">Readlist</a></li>
-                            <li><a href="#">Settings</a></li>
-                        </ul>
-                    </li>
-                    <a href="forums.html"><button>Forums</button></a>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- body container and information -->
-        <div class="body-container">
-
-            <!-- header one -->
-            <div class="content">
-                <h1 id="mainHeader1" class="main-headers">Our Story!</h1>
-                <h3 id="subHeader1" class="sub-headers">Where it all began</h3>
-                <p id="para1" class="paragraphs">In a busy town like Johannesburg many little stores can get lost, but not ours! With my Grandma's 
-                    recipes and the gentle caring nature that our food has, with every mouthful a new delicous sensation that will leave you wanting more. <br> <br>
-                    In the heart of Sandton, started when it was the smallest square-mile in Africa, stood Jason's dinner, your local place to feed. </p>
-               
-                <!-- hide or show div -->
-                <div class="hideOrShow">
-                    <span id="hideOrShow">Hide</span>
-                    <img id="fade" class="image" src="images/restaurant.jpg" alt="building">
-                </div>
-
-                <!-- like button div -->
-                <div class="addToSaved" style="opacity: 1;">
-                    <input type="checkbox" id="checkbox0" class="checkbox">
-                    <span class="addAndDeleteSpan">Like</span>
-                </div>
-            </div>
-                    
-            <!-- header two -->
-            <div class="content">
-                <h1 id="mainHeader2" class="main-headers">Our Food!</h1>
-                <h3 id="subHeader2" class="sub-headers">What smells so delicious?! </h3>
-                <p id="para2" class="paragraphs">Food? <br> <br> We got burgers, the best chips in the whole country as well as some amazing starters that will 
-                    leave your mouth watering and wanting more!</p>
-
-                <!-- hide or show div -->
-                <div class="hideOrShow">
-                    <span id="hideOrShow">Hide</span>
-                    <img id="fade" class="image" src="images/food.png" alt="building">
-                </div>
-
-                <!-- like button -->
-                <div class="addToSaved" style="opacity: 1;">
-                    <input type="checkbox" id="checkbox1" class="checkbox">
-                    <span class="addAndDeleteSpan">Like</span>
-                </div>
-            </div>
-        
-            <!-- header 3 -->
-            <div class="content">
-                <h1 id="mainHeader3" class="main-headers">Our People!</h1>
-                <h3 id="subHeader3" class="sub-headers"> Our finest team </h3>
-                <p id="para3" class="paragraphs">We have some of the finest chefs and waiters in the whole nation! The kindest! The most hardworking team we have ever seen </p>
-                
-                <!-- hide or show div -->
-                <div class="hideOrShow">
-                    <span id="hideOrShow">Hide</span>
-                    <img class="image" src="images/staff.jpg" alt="building">
-                </div>
-
-                <!-- like button -->
-                <div class="addToSaved" style="opacity: 1;">
-                    <input type="checkbox" id="checkbox2" class="checkbox">
-                    <span class="addAndDeleteSpan">Like</span>
-                </div> 
-            </div>
-            
+        <!-- hide or show div -->
+        <div class="hideOrShow">
+          <span id="hideOrShow">Hide</span>
+          <img id="fade" class="image" src="images/restaurant.jpg" alt="building" />
         </div>
-        
-        <!-- referencing the scripts -->
-        <script src="javaScript/main.js"></script>
-    </body>
+
+        <!-- like button div -->
+        <div class="addToSaved" style="opacity: 1">
+          <input type="checkbox" id="checkbox0" class="checkbox" />
+          <span class="addAndDeleteSpan">Like</span>
+        </div>
+      </div>
+
+      <!-- header two -->
+      <div class="content">
+        <h1 id="mainHeader2" class="main-headers">Our Food!</h1>
+        <h3 id="subHeader2" class="sub-headers">What smells so delicious?!</h3>
+        <p id="para2" class="paragraphs">
+          Food? <br />
+          <br />
+          We got burgers, the best chips in the whole country as well as some amazing starters that will leave your mouth watering and wanting more!
+        </p>
+
+        <!-- hide or show div -->
+        <div class="hideOrShow">
+          <span id="hideOrShow">Hide</span>
+          <img id="fade" class="image" src="images/food.png" alt="building" />
+        </div>
+
+        <!-- like button -->
+        <div class="addToSaved" style="opacity: 1">
+          <input type="checkbox" id="checkbox1" class="checkbox" />
+          <span class="addAndDeleteSpan">Like</span>
+        </div>
+      </div>
+
+      <!-- header 3 -->
+      <div class="content">
+        <h1 id="mainHeader3" class="main-headers">Our People!</h1>
+        <h3 id="subHeader3" class="sub-headers">Our finest team</h3>
+        <p id="para3" class="paragraphs">We have some of the finest chefs and waiters in the whole nation! The kindest! The most hardworking team we have ever seen</p>
+
+        <!-- hide or show div -->
+        <div class="hideOrShow">
+          <span id="hideOrShow">Hide</span>
+          <img class="image" src="images/staff.jpg" alt="building" />
+        </div>
+
+        <!-- like button -->
+        <div class="addToSaved" style="opacity: 1">
+          <input type="checkbox" id="checkbox2" class="checkbox" />
+          <span class="addAndDeleteSpan">Like</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- referencing the scripts -->
+    <script src="javaScript/main.js"></script>
+  </body>
 </html>
